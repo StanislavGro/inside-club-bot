@@ -1,0 +1,7 @@
+server:
+  port: 8085
+
+telegram:
+  bot:
+    username: inside_club_bot
+    token: 6254930999:AAFC1-vc3WLr7Olxo3x21BAl1s_sjRmq1yc
