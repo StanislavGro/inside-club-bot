@@ -12,6 +12,7 @@
     <!-- Описание модулей проекта -->
     <modules>
         <module>dispatcher</module>
+        <module>common-rabbitmq</module>
     </modules>
 
     <!-- Свойства maven -->
