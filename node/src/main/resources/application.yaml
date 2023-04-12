@@ -2,6 +2,12 @@ server:
   port: 8086
 
 spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/inside_club
+    username: inside
+    password: inside
+  jpa:
+    generate-ddl: true
   rabbitmq:
     host: localhost
     port: 5672
