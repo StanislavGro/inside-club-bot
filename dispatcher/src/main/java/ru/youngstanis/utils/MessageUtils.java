@@ -11,7 +11,7 @@ public class MessageUtils {
         Message message = update.getMessage();
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(message.getChatId());
-        sendMessage.setText(text);
+        sendMessage.setText(message.getFrom().getFirstName() + " " + message.getFrom().getLastName() + ", " + text);
         return sendMessage;
     }
 }

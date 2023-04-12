@@ -58,11 +58,11 @@ public class UpdateController {
     }
 
     private void setFileReceivedView(Update update) {
-        SendMessage sendMessage = messageUtils.generateSendMessageText(update, "Файл получен, обрабатывается...");
+        SendMessage sendMessage = messageUtils.generateSendMessageText(update, "ваш файл получен, обрабатывается...");
         setView(sendMessage);
     }
 
-    private void setView(SendMessage sendMessage) {
+    public void setView(SendMessage sendMessage) {
         telegramBotController.sendAnswerMessage(sendMessage);
     }
 

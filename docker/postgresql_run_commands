@@ -1,0 +1,8 @@
+// Загружаем из хаба образ postgres
+docker pull postgres:14
+
+// Создаем специально под него монтирование
+docker volume create postgres_data
+
+// Запускаем контейнер
+docker run -d --name postgres -p 5432:5432 -e POSTGRES_USER=inside -e POSTGRES_PASSWORD=edisni2202 -e POSTGRES_DB=users -v postgres_data:/var/lib/postgresql/data --restart=unless-stopped postgres:14
